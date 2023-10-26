@@ -7,17 +7,21 @@ public abstract class EstadoAbstrato implements EstadoInterface {
     @Override
     public void setDocumento(Documento documento) {}
 
+    @Override
     public void setAdm(User adm) {
     validar(adm);
-    if (!adm.isAdm()) {throw new IllegalArgumentException("O usuário não é um administrador.");}
     this.adm = adm;
-}
+    }
 
     public void isAdm() {
-        if(Valida.isNull(adm) || !adm.isAdm()) throw new IllegalArgumentException();
+        if(Valida.isNull(adm) || !adm.isAdm()) throw new IllegalArgumentException("Adm inválido");
     }
 
     public void validar(Object object) {
-        if (Valida.isNull(object)) throw new IllegalArgumentException("Nao pode ser null");
+        if (Valida.isNull(object)) throw new IllegalArgumentException("Não pode ser null");
+    }
+    
+    public void validarAdm(Object object) {
+        if(Valida.isNull(adm) || !adm.isAdm()) throw new IllegalArgumentException("Adm inválido");
     } 
 }
