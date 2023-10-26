@@ -1,0 +1,8 @@
+Problema:
+
+1 - Como projetar um sistema de edição de documentos em que cada documento pode ser um rascunho, estar em revisão ou publicado. 
+
+2 - Quando o documento publicado é um rascunho ele passa para o modo de revisão
+
+3 - No modo de revisão, quando um documento é publicado por um admin ele passa a estar publicado de fato
+A publicação de um documento publicado não tem impacto (faz nada)
