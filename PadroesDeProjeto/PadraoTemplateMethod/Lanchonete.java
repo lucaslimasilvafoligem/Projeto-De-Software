@@ -1,6 +1,6 @@
 public abstract class Lanchonete {
 
-    public BebidaEmCopo ServirBebida() {
+    public Copo ServirBebida() {
         Agua agua = esquentarAgua();
         Bebida bebida = prepararBebida(agua);
         return servirCopo(bebida);
@@ -8,7 +8,7 @@ public abstract class Lanchonete {
     
     protected abstract Bebida prepararBebida(Agua agua);
 
-    private BebidaEmCopo servirCopo(Bebida bebida) {return new BebidaEmCopo(bebida);}
+    private Copo servirCopo(Bebida bebida) {return new Copo(bebida);}
 
     private Agua esquentarAgua() {return new Agua(10.0, "Quente");}
 

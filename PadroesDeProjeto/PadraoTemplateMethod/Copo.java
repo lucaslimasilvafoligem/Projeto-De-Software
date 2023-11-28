@@ -1,9 +1,9 @@
 import java.util.List;
 
-public class BebidaEmCopo {
+public class Copo {
     private Bebida bebida;
 
-    public BebidaEmCopo(Bebida bebida) {
+    public Copo(Bebida bebida) {
         validar(bebida);
         this.bebida = bebida;
     }
