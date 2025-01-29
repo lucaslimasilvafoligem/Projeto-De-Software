@@ -1,0 +1,296 @@
+--> Por que investir em software seguro
+# Ataques cibernéticos
+	1 - Aumento da incidência
+	2 - Aumento do impacto
+
+# Conformidade em segurança
+	1 - Demanda de clientes
+	2 - Exigência de mercados
+	
+# Segurança como propriedade de qualidade
+	1 - Redução de bugs (custo de correção de bugs)
+	2 - Pensar em cenários de ataque "eleva o nível" do software
+	3 - Software seguro é software com qualidade
+	
+--> Shift Left
+* Mova para esquerda (na linha do tempo do projeto de software) as preocupações com segurança.
+
+# --->>---<Princípios de segurança>---[Requisitos]---<Requisitos de segurança, casca de abuso, bug bar>---[Projeto(Design)]---<Análise arquitetural de riscos / modelagem de ameaças>---[Implementação]---<Análise de código SAST, peer-review>---[Testes]---<Testes de Seguraça: pendeel, DAST>---[Release]---<Falha de segurança: Plano de resposta. Penetrate-and-patch>--->
+
+# Principais pontos de vulnerabilidade na segurança
+	1 - Broken access control
+	2 - Cryptographic failures
+	3 - Injection	
+	4 - Insecure design
+	5 - Security misconfiguration
+	6 - Vulnerable and outdated components
+	7 - Identification and authentication failures
+	8 - Software and data integrity failures
+	9 - Security logging and monitoring failures
+	10 - Server-side request forgery (SSRF)
+	11 - Xml external entities (XEE)
+	12 - Cross-site scripting (XSS)
+	13 - Insecure Deserialization
+	
+--> Um passo além do "Shift left"
+* Mentalidade de segurança é um pouco mais do que simplesmente "incluir atividades" ao longo do ciclo de vida, mas esse é o primeiro passo
+
+* Assumir uma postura de segurança em cada atividade do projeto - mesmo aquelas não relacionadas diretamente a segurança. Exemplo: requisito de segurança versus segurança no requisito; requisitos de segurança (determinada comunicação precisa ser cifrada), segurança no requisito (que serviços devem estar disponíveis para determinado perfil).
+
+--> Parte 1: Contexto da segurança de aplicações
+* Segurança de software, segurança de aplicações/sistemas e sua relevância na segurança da informação e de computadores
+
+--> Segurança de operações
+* Segurança de domínio tradicional do pessoal de infrestutura: pessoal com perfil de operação - não de "construção"
+
+* Tecnologias de segurança são muito mais consolidadas do que métodos de desenvolvimento seguro: firewall, IDS, antivírus
+
+* Software não deve depender do ambiente para estar seguro: necessário ensinar pessoal de desenvolvimento a pensar em segurança
+
+--> Segurança de aplicações/sistemas
+* Definição: proteger software uma vez que ele está em operação
+
+* Ambiente operacional pode proteger software vulnerável, mas é mais fácil proteger software "seguro"
+
+* Exemplos de técnicas: sadboxing, monitoramento de atividades e filtro de entradas
+
+--> Segurança de software
+* Segurança de software: construção de software que funcione corretamente mesmo sob ataque
+
+* Campo relativamente novo: primeiras publicações acadêmicas na virada do milênio
+
+# Relevância:
+
+	1 - Aspecto central em segurança da informação e de computadores
+
+	2 - Evidências estatísticas da quantidade de fraquezas de software
+
+* Desenvolver software seguro siginifica pensar em segurança ao longo de todo o ciclo de vida do software
+	
+--> Segurança como esforço multidisciplinar
+* Desenvolvedores ainda precisam entender melhor as questões de segurança: importância do treinamento, importância de evidenciar impacto, necessário envolver todos os perfis e papéis
+
+* Segurança de software pode se beneficiar de áreas mais maduras como a engenharia de software
+
+* Interação com "operações" ainda é fundamental
+
+--> Segurança no cliclo de desenvolvimento
+* Requisitos: segurança "funcional" e características emergentes
+
+* Projeto (Design): arquitetura contemplando princípios de segurança e análise "arquitetural" de riscos ou modelagem em ameaças
+
+* Implementação: padrões de progamação e ferramentas de análise de código
+
+* Testes de segurança
+
+* Monitoramento de operações
+
+--> O desafio de construir aplicações seguras
+* Segurança da informação é um objetivo desafiador
+
+* Desafios técnicos: dificuldades intrísecas ao tema
+
+* Desafios práticos: como o tema é tratado no dia-dia
+
+<> Aspectos técnicos
+	- Presença de um adversário
+	- Novos paradigmas e tecnologias
+	- Impactos de um ataque cibernético
+	- Disponibilidade das "armas cibernéticas"
+
+<> Presença de um adversário
+	- Adversários seguem as mais diversas (e criatuvas) estrátegias
+	- usuários versus adversários
+	- Falhas versus ataques
+	- Engenharia versus defesas
+	- Requisitos funcionais versus requisitos de segurança
+	
+<> Novos paradigmas e tecnologias
+	- Novos paradigmas e tecnologias trazem novas complexidades
+	
+	- Inteligẽncia Artificial (IA): uso de IA em ferramentas de ataque e defesa, ataque de algoritimos
+	
+	<> Internet das coisas (IoT):
+		- Elevada conectividade
+		- Ambientes hostis 
+		- Recursos computacionais limitados
+		- Enfraquecimento do "perímetro de segurança"
+	- Outros: cloud/fog/edge, big dataa, quantum
+	
+<> Impacatos de ataques cibernéticos
+	- Perdas financeiras
+	- Impactos operacionais
+	- Danos físicos a equipamentos
+	- Saúde, segurança e Meio ambiente
+		
+<> Disponibilidade de "armas cibernéticas"
+	- Armas cibernéticas estão, cada vez mais poderosas, mais baratas e mais facilmente utilizáveis
+
+<> Aspectos práticos
+	<> Baixo "apelo/atratividade" da segurança
+		- Segurança versus usabilidade
+		- Custos financeiros da segurança
+		- O problema é de todos (e a responsabilidade, também)
+		- Dificuldade de comunicação
+	<> Ataques cibernéticos se tornaram um excekente negócio
+		- Para o crime organizado
+		- Mas também para organizações e estados-nação(próximos slides)
+		
+* Zerodium é um Mercado de armas cibernéticas
+
+* Em resumo: Segurança vista como tema muito técnico e pouco interessante, mesmo em comunidades técnicas - como desenvolvdores. Ainda assim, já não é um aspecto que possa ser desprezado, impactos de ataque cibernéticos são enormes. Software seguro é uma necessidade importante camada de defesa de sistemas computacionais.
+
+--> Visão geral de Segurança de aplicações
+	- Como sua aplicaçã é executada
+	- Plataforma de execução
+	- Infraestrutura de comunicação
+	- Recursos domputacionais
+	- Pessoas (usuários)
+	
+<> Tecnology stack (exemplo whatsapp)
+	-  Backend: Software de aplicação, web framework, linguagem de progamação, banco de dados, servidor web, sistema operacional, servidor hardware. Pessoas, administrador de sistemas e desenvolvedores.
+	
+	- Frontend: Js, CSS, HTML, Browser, Sistema Operacional, Computador (Hardware)
+	
+<> Segurança da infraestrutura de comunicação
+	- Canais de comunicação: cabos, fibras e ar
+	- Esquipamentos de rede: Switches, roteadores, balanceadores de cargas
+	- Serviços diversos: Disco virtual, servidor de autenticação, e-mail
+	- Equipamentos de segurança: Firewall, gerenciamento de eventos, detecção de ameaças
+	
+<> Como proteger sua aplicação
+
+	- Abordagens complementares: software seguro e ambiente seguro
+	
+	<> Software seguro
+		- Requisitos de segurança bem-definidos
+		- Ameaças consistentemente modeladas
+		- Arquitetura robusta de segurança
+		- Codificação seguro
+		- Testes de segurança
+	
+	<> Ambiente seguro
+		- Ambiente de desenvolvimento
+		- Stack tecnológia
+		- Ambiente de execução: topologia de rede, monitoramento e proteção
+		- Operações: gerenciamento de ativos vulns, resposta a incidente
+
+--> Padrões de segurança
+<> Elementos:
+	- Importância dos padrões
+	- Tipos de padrões e organismos de padronização
+	- Normas, conformidade e regulações
+	- Padrões notáveis de segurança
+
+<> Importância da padronização
+	- Padrões representam a convergência técnica entre maiores especialistas em um assunto, desvrevem as melhores práticas em relação àquele assunto
+	
+	- Definem uma base conceitual e nomenclatura comum, facilitam comunicação, medição, comércio e interoperabilidade
+	
+	- Promovem boas práticas para a economia: facilitam a interação entre empresas, facilitam a conformidade a leis e regulações, aceleram a introdução de inovações, promovem a interoperabilidade entre produtos, serviços e processos - novos e existentes
+	
+<> Por que padrões
+
+	- Permitem "refletir" para soluções locais as referências e boas práticas internacionais
+
+	- Padrões forçam o exercício di método científico: descrição rigorosa de conceitos, requisitos e métodos, compreensão plena e domínio técnico
+
+	- Padrões facilitam a propagação de informação: estimulam a implantação de soluções de segurança, exemplo DES (Data encryption standard)
+	
+<> Histórico e tipos de padrões e organismos de padrões
+
+	- Origem da padronização: pesos e medidas já presentes nas civilizações antigas - necessidades de comércio e tributação
+	
+	# Padrões evoluem conforme a necessidade da sociedade
+		1 - Padrões mecânicos, elétricos e de comunicações
+		2 - Padrões químicos e biológicos
+		3 - Padrões de tecnologia da informação
+
+	# Organismos de padronização
+		1 - Interacional: ISO, IEC. ITU
+		2 - Nacionais/Regionais: IEEE
+		3 - Setoriais: Internet society, PCI SSC
+		4 - Governamentais: NIST, BSI, ANSI, ENISA
+	- Padrões "de jure" e padrões "de facto"
+
+# Padrões consolidados de segurança
+	1 - Security requeriments for cryptographic 
+	2 - Common Criteria for Information Technology Security Evaluation
+	3 - Framework for improving Critical infrastructure Cybersecurity
+
+<> Padrões de criptográfia
+
+	<> Padrões NIST (Fips e Sp) são os mais influentes
+		- Fips 46-3, Encryption Standard (DES)
+		- FIPS 186-4, Digital Signature Standard (DSS)
+		- FIPS 197, advanced Encryption Standard (AES)
+		- SP 800-90A Rev1, recommendation for random number generation using deterministic
+		
+	<> Outros padrões
+		- Padrões ISO - geralmente consolidam padrões de outras organizações
+		- Common Criteria - Padrão multilateral de Seg.SW com origens no ITSEC, CTCPEC e TCSEC
+		- Padrão ITU-T X.509 para infraestruturas de chaves públicas
+		- Padrões PKCS da RSA security - vários são RFC - ex> PKCS#1 (RSA) -> RFC 8017
+		- PGP (Segurança de EMail) - Vários são RFC associados - ex: RFC 4880
+		
+<> Frameworks de segurança - progamas de segurança cibernética
+
+	<> NIST CSF
+		- Framework orientado a riscos
+		- Versão 1.1 tem 23 categorias e 108 subcategorias
+	<> Cis Controls
+		- Framework de controles de segurança
+		- Versão 8 tem 18 controles e 153 salvaguardas
+	<> Iso/IEC série 27K
+		- Sitema de gestão de segurança de informação
+		- Foco em certificação e melhoria contínua
+		
+--> NIST Cybersecurity Framework
+<> Identificar
+	- Gerenciamento de ativos
+	- Ambiente de negócios
+	- Gorvernança
+	- Avaliação de risco
+	- Estratégia de gerenciamento de riscos
+	- Gerenciamento de risco da cadeia de suprimentos
+	
+<> Proteger
+	- Controle de acesso
+	- Conscientização e treinamento
+	- Segurança de dados
+	- Processos e procedimentos de informação
+	- Manutenção
+	- Tecnologia de proteção
+	
+<> Detectar
+	- Anomalias e eventos
+	- Monitoramento contínuo de segurança
+	- Processos de detecção
+
+<> Responder
+	- Planejamento de respostas
+	- Comunicações
+	- análise
+	- Migração
+	- Mitigação
+	- Melhorias
+
+<> Recuperar
+	- planejamento de recuperação
+	- Melhorias
+	- Comunicação
+	
+--> Padronização e avaliação de confromidade
+	- Padrões frequentemente têm foco nos "requisitos", mas é importante saber avaliar se os padrões estão sendo alcançados
+	
+	- Teste de conformidade permitem avaliar o atendimento aos requisitos de um padrão realizados através de ensaios, inspeções, auditorias
+	
+	- Avaliação da conforidade têm seus própios padrões (Iso série 17000)
+	
+	- A ISO (International Organization for Standardization) e a IEC (International Electrotechnical Commission) possuem publicações sobre avaliações da conformidade. Essas publicações internacionais são amplamente reconhecidas e usadas nos mais diversos setores e atores para ativdades de avaliações de conformidade
+	
+<> Avaliação de conformidade em segurança
+	- Segurança de software: common criteri
+	- Módulos criptográficos: FIPS 140-2
+	- Sistema de gestão da segurança da informação ISO/IEC 27001
+	- Padrões técnicos e avaliação da conformidade podem levar a requisitos de segurança e impactar no próprio processo de desenvolvimento
