@@ -41,7 +41,7 @@
 * Segurança de software, segurança de aplicações/sistemas e sua relevância na segurança da informação e de computadores
 
 --> Segurança de operações
-* Segurança de domínio tradicional do pessoal de infrestutura: pessoal com perfil de operação - não de "construção"
+* Segurança de domínio tradicional do pessoal de infraestrutura: pessoal com perfil de operação - não de "construção"
 
 * Tecnologias de segurança são muito mais consolidadas do que métodos de desenvolvimento seguro: firewall, IDS, antivírus
 
@@ -65,7 +65,7 @@
 
 	2 - Evidências estatísticas da quantidade de fraquezas de software
 
-* Desenvolver software seguro siginifica pensar em segurança ao longo de todo o ciclo de vida do software
+* Desenvolver software seguro significa pensar em segurança ao longo de todo o ciclo de vida do software
 	
 --> Segurança como esforço multidisciplinar
 * Desenvolvedores ainda precisam entender melhor as questões de segurança: importância do treinamento, importância de evidenciar impacto, necessário envolver todos os perfis e papéis
@@ -74,12 +74,12 @@
 
 * Interação com "operações" ainda é fundamental
 
---> Segurança no cliclo de desenvolvimento
+--> Segurança no ciclo de desenvolvimento
 * Requisitos: segurança "funcional" e características emergentes
 
 * Projeto (Design): arquitetura contemplando princípios de segurança e análise "arquitetural" de riscos ou modelagem em ameaças
 
-* Implementação: padrões de progamação e ferramentas de análise de código
+* Implementação: padrões de programação e ferramentas de análise de código
 
 * Testes de segurança
 
@@ -99,7 +99,7 @@
 	- Disponibilidade das "armas cibernéticas"
 
 <> Presença de um adversário
-	- Adversários seguem as mais diversas (e criatuvas) estrátegias
+	- Adversários seguem as mais diversas (e criativas) estrátegias
 	- usuários versus adversários
 	- Falhas versus ataques
 	- Engenharia versus defesas
@@ -108,7 +108,7 @@
 <> Novos paradigmas e tecnologias
 	- Novos paradigmas e tecnologias trazem novas complexidades
 	
-	- Inteligẽncia Artificial (IA): uso de IA em ferramentas de ataque e defesa, ataque de algoritimos
+	- Inteligência Artificial (IA): uso de IA em ferramentas de ataque e defesa, ataque de algoritmos
 	
 	<> Internet das coisas (IoT):
 		- Elevada conectividade
@@ -117,7 +117,7 @@
 		- Enfraquecimento do "perímetro de segurança"
 	- Outros: cloud/fog/edge, big dataa, quantum
 	
-<> Impacatos de ataques cibernéticos
+<> Impactos de ataques cibernéticos
 	- Perdas financeiras
 	- Impactos operacionais
 	- Danos físicos a equipamentos
@@ -132,16 +132,16 @@
 		- Custos financeiros da segurança
 		- O problema é de todos (e a responsabilidade, também)
 		- Dificuldade de comunicação
-	<> Ataques cibernéticos se tornaram um excekente negócio
+	<> Ataques cibernéticos se tornaram um excelente negócio
 		- Para o crime organizado
 		- Mas também para organizações e estados-nação(próximos slides)
 		
 * Zerodium é um Mercado de armas cibernéticas
 
-* Em resumo: Segurança vista como tema muito técnico e pouco interessante, mesmo em comunidades técnicas - como desenvolvdores. Ainda assim, já não é um aspecto que possa ser desprezado, impactos de ataque cibernéticos são enormes. Software seguro é uma necessidade importante camada de defesa de sistemas computacionais.
+* Em resumo: Segurança vista como tema muito técnico e pouco interessante, mesmo em comunidades técnicas - como desenvolvedores. Ainda assim, já não é um aspecto que possa ser desprezado, impactos de ataque cibernéticos são enormes. Software seguro é uma necessidade importante camada de defesa de sistemas computacionais.
 
 --> Visão geral de Segurança de aplicações
-	- Como sua aplicaçã é executada
+	- Como sua aplicação é executada
 	- Plataforma de execução
 	- Infraestrutura de comunicação
 	- Recursos domputacionais
@@ -154,7 +154,7 @@
 	
 <> Segurança da infraestrutura de comunicação
 	- Canais de comunicação: cabos, fibras e ar
-	- Esquipamentos de rede: Switches, roteadores, balanceadores de cargas
+	- Equipamentos de rede: Switches, roteadores, balanceadores de cargas
 	- Serviços diversos: Disco virtual, servidor de autenticação, e-mail
 	- Equipamentos de segurança: Firewall, gerenciamento de eventos, detecção de ameaças
 	
@@ -183,7 +183,7 @@
 	- Padrões notáveis de segurança
 
 <> Importância da padronização
-	- Padrões representam a convergência técnica entre maiores especialistas em um assunto, desvrevem as melhores práticas em relação àquele assunto
+	- Padrões representam a convergência técnica entre maiores especialistas em um assunto, descrevem as melhores práticas em relação àquele assunto
 	
 	- Definem uma base conceitual e nomenclatura comum, facilitam comunicação, medição, comércio e interoperabilidade
 	
@@ -193,7 +193,7 @@
 
 	- Permitem "refletir" para soluções locais as referências e boas práticas internacionais
 
-	- Padrões forçam o exercício di método científico: descrição rigorosa de conceitos, requisitos e métodos, compreensão plena e domínio técnico
+	- Padrões forçam o exercício de método científico: descrição rigorosa de conceitos, requisitos e métodos, compreensão plena e domínio técnico
 
 	- Padrões facilitam a propagação de informação: estimulam a implantação de soluções de segurança, exemplo DES (Data encryption standard)
 	
@@ -294,3 +294,23 @@
 	- Módulos criptográficos: FIPS 140-2
 	- Sistema de gestão da segurança da informação ISO/IEC 27001
 	- Padrões técnicos e avaliação da conformidade podem levar a requisitos de segurança e impactar no próprio processo de desenvolvimento
+
+--> Terminologia básica de segurança
+<> Conceito de segurança: Definição clássica de "segurança de computadores": A proteção a um sistema de informação automatizado para atingir os objetivos apropriados de preservação da integridade, disponibilidade e confiabilidade de ativos de sistemas de informações; tais ativos incluem hardware, software, firmware, informações/dados e telecomunicações
+
+* Definição da SP 900-12 R1: A proteção da informação e de sistemas de informação contra acesso, uso, divulgação, disrupção, modificação ou destruição não-autorizados de forma a garantir confidencialidade, integridade e disponibilidade
+
+<> Definição de ataque no contexto de segurança: Agressão de um sistema que deriva de uma ameaça inteligente, i.e, um ato inteligente que é uma tentativa deliberada (especialmente, no sentido de um método ou técnica) de evadir serviços de segurança e violar a política de segurança de um sistema
+
+	* Passivo: não há interação, inferência ou efeito no sistema atacado (exemplo leitura de mensagem em um canal de comunicação)
+	
+	* Ativo: Baseia-se na interação, inferência ou efeito no sistema atacado (exemplo: injeção de SQL)
+
+<> Ataque interno versus externo:
+	* Externo: realizado por indivíduo desprovido de credencias ou informações privilegiadas em relação aos sistemas atacados; realizado a partir de redes públicas
+	
+	* Interno: realizado a partir de redes restritas ou beneficiado por credenciais e informações privilegiados
+
+--> Vulnerabilidades de segurança:Uma fraqueza em um ativo ou grupo de ativos que pode ser explorada por uma ou mais ameaças
+
+	<> Agente de ameaça (Antidade/evento, circunstância) --> [exploração exercício -  violação da política de segurança | arquivo é corrompido, documento é acessado indevidamente, software executa de maneira indevidamente, software executa de maneira indevida,] --> Fraqueza ou falha (software, hardware, arquitetura/redes/configuração, não-tecnológias)
